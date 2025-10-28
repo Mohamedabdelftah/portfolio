@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('D:/Upskilling/Assigmnets/portfolio/src/assets/Fonts/PlayfairDisplay-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.capitalize-text {
+  text-transform: capitalize;
+
+}

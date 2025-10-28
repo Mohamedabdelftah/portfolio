@@ -1,0 +1,12 @@
+.bolder{
+  font-weight: bolder;
+  text-transform: capitalize;
+  font-size: 50px;
+  font-family: 'Playfair Display', serif;
+}
+
+.boundary-square{
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 2px;
+}
