@@ -5,13 +5,19 @@ import { AppComponent } from './app.component';
 import { SliderComponent } from './slider/slider.component';
 import { AboutComponent } from './about/about.component';
 import { OffcanvasNavbarComponent } from './offcanvas-navbar/offcanvas-navbar.component';
+import { SkillsComponent } from './skills/skills.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { TimelineComponent } from './timeline/timeline.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SliderComponent,
     AboutComponent,
-    OffcanvasNavbarComponent
+    OffcanvasNavbarComponent,
+    SkillsComponent,
+    ExperienceComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,

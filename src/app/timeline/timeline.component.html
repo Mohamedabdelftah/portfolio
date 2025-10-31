@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="row justify-content-center mt-5">
+    <div class="col-md-8">
+      <h2 class="page-header-text">EXPERIENC</h2>
+      <p class="page-bold-header-text">WORK EXPERINCE</p>
+
+      <div class="row mb-5">
+        <div class="col-12 mt-4 pt-2">
+          <div class="timeline-page position-relative">
+
+            <div *ngFor="let item of experienceData; let i = index">
+              <div *ngIf="i % 2 === 1; else evenBlock">
+                <div class="odd-item">
+                  <div class="timeline-item mt-5 pt-4">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="duration date-label-left position-relative text-md-end">
+                          <div class="image-fluid">
+                            <img [src]="item.Logo" alt="{{ item.CompanyName }} Logo" class="company-logo"
+                              height="50px" />
+                          </div>
+                          <h5 class="my-2">{{ item.CompanyName }}</h5>
+                          <small class="text-muted mb-0">{{ item.Start }} - {{ item.End }}</small>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 mt-4 mt-sm-0">
+                        <div class="event event-description-right float-left text-start">
+                          <h6 class="title mb-1 text-capitalize">{{item.Position}}</h6>
+                          <p class="timeline-subtitle mt-3 mb-0 text-muted">
+                            {{item.Description}}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <ng-template #evenBlock>
+                <div class="even-item">
+                  <div class="timeline-item mt-5 pt-4">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-6 order-sm-1 order-2 mt-4 mt-sm-0">
+                        <div class="event event-description-left float-left text-end">
+                          <h6 class="title mb-1 text-capitalize">{{item.Position}}</h6>
+                          <p class="timeline-subtitle mt-3 mb-0 text-muted">
+                            {{item.Description}}
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 order-sm-2 order-1">
+                        <div class="duration duration-right position-relative">
+                          <div class="image-fluid">
+                            <img [src]="item.Logo" alt="{{ item.CompanyName }} Logo" class="company-logo"
+                              height="50px" />
+                          </div>
+                          <h5 class="my-2">{{item.CompanyName}}</h5>
+                          <small class="text-muted mb-0">{{item.Start}} - {{item.End}}</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

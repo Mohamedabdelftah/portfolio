@@ -1,0 +1,33 @@
+<div class="container h-100">
+  <div class="row justify-content-center mt-5">
+    <div class="col-md-8">
+      <h2 class="page-header-text">MY SPECIALTY</h2>
+      <p class="page-bold-header-text">MY SKILLS</p>
+      <p class="pt-3 gray-and-small">
+        I am a skilled GIS Developer with strong expertise in ArcGIS Enterprise,
+        ArcGIS Pro, and Esri SDKs, including the ArcGIS API for JavaScript and
+        ArcGIS Runtime SDK for .NET. I have hands-on experience in spatial
+        databases, automation using ArcPy, and integrating GIS with Flask and
+        Angular applications. My background also includes web development, API
+        integration, and data validation workflows, allowing me to bridge the
+        gap between GIS and modern web technologies effectively.
+      </p>
+
+      <div class="row">
+        <div class="col-md-5" *ngFor="let card of skillsCardsData">
+          <div class="m-4">
+
+            <h5>{{ card.title }}</h5>
+            <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0"
+              aria-valuemax="100">
+              <div [ngClass]="'progress-bar text-bg-' + card.color" [style]="'width:' + card.value + '%'">
+                {{ card.value }}%
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,16 +1,23 @@
-<div class="container">
+<div class="container h-100 ">
   <div class="row justify-content-center mt-5">
     <div class="col-md-8">
-      <h2>About Me</h2>
-      <p>
-        I am Mohamed Abdelfattah, a passionate GIS Developer with expertise in geospatial technologies and data analysis. I specialize in creating innovative GIS solutions to help organizations make informed decisions.
+      <h2 class="page-header-text">ABOUT ME</h2>
+      <p class="page-bold-header-text">WHO AM I ?</p>
+      <p class="pt-5 gray-and-small">
+        <span class="fw-bold">I am Mohamed Abdelfattah,</span> a passionate GIS Developer with expertise in geospatial technologies and data
+        analysis. I specialize in creating innovative GIS solutions to help organizations make informed decisions.
       </p>
-      <p>
-        With a strong background in geography and computer science, I have experience working with various GIS software and programming languages. I am dedicated to continuous learning and staying updated with the latest advancements in the field.
-      </p>
-      <p>
+      <p class="pt-3 gray-and-small">
         In my free time, I enjoy exploring new places, hiking, and contributing to open-source GIS projects.
       </p>
+      <div class="row">
+        <div class="col-md-3 " *ngFor="let card of AboutCardsData">
+          <div [ngClass]="'cardHeight border-bottom border-'+card.color + ' about-card text-start p-4 m-2 border-bottom'">
+            <div [ngClass]="'text-' + card.color + ' mb-3'"   [innerHTML]="card.icon"></div>
+            <h5 class="fw-bold">{{ card.title }}</h5>
+          </div>
+      </div>
     </div>
+
   </div>
 </div>
