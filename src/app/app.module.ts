@@ -8,6 +8,8 @@ import { OffcanvasNavbarComponent } from './offcanvas-navbar/offcanvas-navbar.co
 import { SkillsComponent } from './skills/skills.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { TimelineComponent } from './timeline/timeline.component';
+import { WorkComponent } from './work/work.component';
+import { WorkGalleryComponent } from './work-gallery/work-gallery.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { TimelineComponent } from './timeline/timeline.component';
     OffcanvasNavbarComponent,
     SkillsComponent,
     ExperienceComponent,
-    TimelineComponent
+    TimelineComponent,
+    WorkComponent,
+    WorkGalleryComponent
   ],
   imports: [
     BrowserModule,

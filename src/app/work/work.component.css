@@ -1,0 +1,22 @@
+.page-bold-header-text,.page-header-text{
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  padding-top: 20px;
+}
+
+.gray-and-small{
+  color: gray;
+  font-weight: lighter;}
+
+.page-header-text{
+  color: gray;
+  font-weight: lighter;
+  font-size: small;
+
+
+
+}
+.page-bold-header-text{
+  color: black;
+font-weight: bold;
+}
