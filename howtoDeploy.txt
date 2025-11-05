@@ -1,0 +1,2 @@
+ng build --output-path=dist/portfolio/browser --base-href "/portfolio/"
+npx angular-cli-ghpages --dir=dist/portfolio/browser

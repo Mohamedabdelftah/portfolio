@@ -11,3 +11,17 @@
 }
 
 
+.navbar-fixed-lg {
+  position: relative;
+}
+
+
+@media (min-width: 992px) {
+  .navbar-fixed-lg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+  }
+}

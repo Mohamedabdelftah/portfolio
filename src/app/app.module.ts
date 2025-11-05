@@ -6,11 +6,11 @@ import { SliderComponent } from './slider/slider.component';
 import { AboutComponent } from './about/about.component';
 import { OffcanvasNavbarComponent } from './offcanvas-navbar/offcanvas-navbar.component';
 import { SkillsComponent } from './skills/skills.component';
-import { ExperienceComponent } from './experience/experience.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { WorkComponent } from './work/work.component';
 import { WorkGalleryComponent } from './work-gallery/work-gallery.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,14 +18,15 @@ import { WorkGalleryComponent } from './work-gallery/work-gallery.component';
     AboutComponent,
     OffcanvasNavbarComponent,
     SkillsComponent,
-    ExperienceComponent,
     TimelineComponent,
     WorkComponent,
     WorkGalleryComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

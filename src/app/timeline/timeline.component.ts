@@ -9,7 +9,7 @@ import { Data } from '@angular/router';
 export class TimelineComponent {
   experienceData: Array<{Logo: string,CompanyName: string,Start: string,End: string,Position: string,Description: string}> = [
     {
-      Logo: '../../assets/Logo/1760881808003.jpeg',
+      Logo: 'https://scontent.fcai19-2.fna.fbcdn.net/v/t39.30808-6/473193928_1125905869541302_4044689635104564071_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFMeNuBKu1Iu9se9A4WnUH7sHDCZ_C9oq-wcMJn8L2ir1ojQ4NoEUAVKYnce-ezd3PjdJMERRGzqqlnWszReyvW&_nc_ohc=TsYh2oDsEp4Q7kNvwE3KfMm&_nc_oc=AdlTWIB7RSJMfTtoGsTU-Qhny-Bczu-jZONEmhPlGP9ttZ79t38TLNEcS9Df0oF1AwM&_nc_zt=23&_nc_ht=scontent.fcai19-2.fna&_nc_gid=dsB26gI4KIpqQOL1BuUvgg&oh=00_Afgt96VJonS0bXQvqjnP1Y521ueecj55zuYq4ESQ7H_TsA&oe=690DAB51',
       CompanyName: 'Al Qemam',
       Start: new Date('2025-11-16').toLocaleString('default', { month: 'long', year: 'numeric' }),
       End:'Present',
